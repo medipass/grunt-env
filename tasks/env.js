@@ -48,11 +48,11 @@ module.exports = function(grunt) {
   function processDirectives(options) {
 
     var dispatch = {
-      add : add,
-      replace : replace,
-      unshift : arrayLike.bind({}, 'unshift'),
-      push : arrayLike.bind({}, 'push'),
-      concat : arrayLike.bind({}, 'push')
+      add: add,
+      replace: replace,
+      unshift: arrayLike.bind({}, 'unshift'),
+      push: arrayLike.bind({}, 'push'),
+      concat: arrayLike.bind({}, 'push')
     };
 
     _.forEach(options, function(optionData, option) {
